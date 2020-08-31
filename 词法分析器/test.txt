@@ -1,0 +1,23 @@
+#include<iostream>
+int main()
+{ 
+  int a=1+11i;
+   //cout<<1;
+  int b,_ab=0+1;
+  while(b<10)
+ {
+    a=a+1e10;
+    if(b<10)
+   {
+    /*cout<<2;
+   */
+    a+=b;
+    b++;
+   }
+    else
+    { a++;
+    }
+ }
+}
+
+
