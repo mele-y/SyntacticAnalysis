@@ -1,0 +1,3369 @@
+���ս������:
+@ S V F A H G B R M D C L E T 
+�ս������:
+$ v d ; = ( ) { } , i w f e l a m n c r 
+first������:
+@:$ v ( d n f 
+S:$ v ( d n f 
+V:v 
+F:v ( d n f 
+A:d $ 
+H:l v ( d n f 
+G:v 
+B:$ v d ; i w f 
+R:r 
+M:, $ 
+D:v d ; i w f 
+C:v ( d n f 
+L:e $ 
+E:v ( d n f 
+T:v ( d n f 
+follow������
+@:  # 
+S:  # 
+V:  v ( d n f # ; i w r } 
+F:  v ( d n f # m a ; c ) 
+A:  ; ) 
+H:  ; ) 
+G:  ) 
+B:  r } 
+R:  } 
+M:  ) 
+D:  v d ; i w f r } 
+C:  ) ; 
+L:  v d ; i w f r } 
+E:  ; ) 
+T:  a ; ) 
+DFA:
+״̬0:
+@->.S   #
+S->.VS   #
+S->.FS   #
+S->.$   #
+V->.vd;   v
+V->.vd;   (
+V->.vd;   d
+V->.vd;   n
+V->.vd;   f
+V->.vd;   #
+V->.vA;   v
+V->.vA;   (
+V->.vA;   d
+V->.vA;   n
+V->.vA;   f
+V->.vA;   #
+F->.vd(G){BR}   v
+F->.vd(G){BR}   (
+F->.vd(G){BR}   d
+F->.vd(G){BR}   n
+F->.vd(G){BR}   f
+F->.vd(G){BR}   #
+F->.(E)   v
+F->.(E)   (
+F->.(E)   d
+F->.(E)   n
+F->.(E)   f
+F->.(E)   #
+F->.d   v
+F->.d   (
+F->.d   d
+F->.d   n
+F->.d   f
+F->.d   #
+F->.n   v
+F->.n   (
+F->.n   d
+F->.n   n
+F->.n   f
+F->.n   #
+F->.f   v
+F->.f   (
+F->.f   d
+F->.f   n
+F->.f   f
+F->.f   #
+״̬1:
+@->S.   #
+״̬2:
+S->V.S   #
+S->.VS   #
+S->.FS   #
+S->.$   #
+V->.vd;   v
+V->.vd;   (
+V->.vd;   d
+V->.vd;   n
+V->.vd;   f
+V->.vd;   #
+V->.vA;   v
+V->.vA;   (
+V->.vA;   d
+V->.vA;   n
+V->.vA;   f
+V->.vA;   #
+F->.vd(G){BR}   v
+F->.vd(G){BR}   (
+F->.vd(G){BR}   d
+F->.vd(G){BR}   n
+F->.vd(G){BR}   f
+F->.vd(G){BR}   #
+F->.(E)   v
+F->.(E)   (
+F->.(E)   d
+F->.(E)   n
+F->.(E)   f
+F->.(E)   #
+F->.d   v
+F->.d   (
+F->.d   d
+F->.d   n
+F->.d   f
+F->.d   #
+F->.n   v
+F->.n   (
+F->.n   d
+F->.n   n
+F->.n   f
+F->.n   #
+F->.f   v
+F->.f   (
+F->.f   d
+F->.f   n
+F->.f   f
+F->.f   #
+״̬3:
+S->F.S   #
+S->.VS   #
+S->.FS   #
+S->.$   #
+V->.vd;   v
+V->.vd;   (
+V->.vd;   d
+V->.vd;   n
+V->.vd;   f
+V->.vd;   #
+V->.vA;   v
+V->.vA;   (
+V->.vA;   d
+V->.vA;   n
+V->.vA;   f
+V->.vA;   #
+F->.vd(G){BR}   v
+F->.vd(G){BR}   (
+F->.vd(G){BR}   d
+F->.vd(G){BR}   n
+F->.vd(G){BR}   f
+F->.vd(G){BR}   #
+F->.(E)   v
+F->.(E)   (
+F->.(E)   d
+F->.(E)   n
+F->.(E)   f
+F->.(E)   #
+F->.d   v
+F->.d   (
+F->.d   d
+F->.d   n
+F->.d   f
+F->.d   #
+F->.n   v
+F->.n   (
+F->.n   d
+F->.n   n
+F->.n   f
+F->.n   #
+F->.f   v
+F->.f   (
+F->.f   d
+F->.f   n
+F->.f   f
+F->.f   #
+״̬4:
+V->v.d;   v
+V->v.d;   (
+V->v.d;   d
+V->v.d;   n
+V->v.d;   f
+V->v.d;   #
+V->v.A;   v
+V->v.A;   (
+V->v.A;   d
+V->v.A;   n
+V->v.A;   f
+V->v.A;   #
+F->v.d(G){BR}   v
+F->v.d(G){BR}   (
+F->v.d(G){BR}   d
+F->v.d(G){BR}   n
+F->v.d(G){BR}   f
+F->v.d(G){BR}   #
+A->.d=H   ;
+A->.$   ;
+״̬5:
+F->(.E)   v
+F->(.E)   (
+F->(.E)   d
+F->(.E)   n
+F->(.E)   f
+F->(.E)   #
+E->.TaE   )
+E->.T   )
+T->.FmT   a
+T->.F   a
+T->.FmT   )
+T->.F   )
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬6:
+F->d.   v
+F->d.   (
+F->d.   d
+F->d.   n
+F->d.   f
+F->d.   #
+״̬7:
+F->n.   v
+F->n.   (
+F->n.   d
+F->n.   n
+F->n.   f
+F->n.   #
+״̬8:
+F->f.   v
+F->f.   (
+F->f.   d
+F->f.   n
+F->f.   f
+F->f.   #
+״̬9:
+S->VS.   #
+״̬10:
+S->FS.   #
+״̬11:
+V->vd.;   v
+V->vd.;   (
+V->vd.;   d
+V->vd.;   n
+V->vd.;   f
+V->vd.;   #
+F->vd.(G){BR}   v
+F->vd.(G){BR}   (
+F->vd.(G){BR}   d
+F->vd.(G){BR}   n
+F->vd.(G){BR}   f
+F->vd.(G){BR}   #
+A->d.=H   ;
+״̬12:
+V->vA.;   v
+V->vA.;   (
+V->vA.;   d
+V->vA.;   n
+V->vA.;   f
+V->vA.;   #
+״̬13:
+F->(E.)   v
+F->(E.)   (
+F->(E.)   d
+F->(E.)   n
+F->(E.)   f
+F->(E.)   #
+״̬14:
+E->T.aE   )
+E->T.   )
+״̬15:
+T->F.mT   a
+T->F.   a
+T->F.mT   )
+T->F.   )
+״̬16:
+F->v.d(G){BR}   m
+F->v.d(G){BR}   a
+F->v.d(G){BR}   )
+״̬17:
+F->(.E)   m
+F->(.E)   a
+F->(.E)   )
+E->.TaE   )
+E->.T   )
+T->.FmT   a
+T->.F   a
+T->.FmT   )
+T->.F   )
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬18:
+F->d.   m
+F->d.   a
+F->d.   )
+״̬19:
+F->n.   m
+F->n.   a
+F->n.   )
+״̬20:
+F->f.   m
+F->f.   a
+F->f.   )
+״̬21:
+V->vd;.   v
+V->vd;.   (
+V->vd;.   d
+V->vd;.   n
+V->vd;.   f
+V->vd;.   #
+״̬22:
+F->vd(.G){BR}   v
+F->vd(.G){BR}   (
+F->vd(.G){BR}   d
+F->vd(.G){BR}   n
+F->vd(.G){BR}   f
+F->vd(.G){BR}   #
+G->.vdM   )
+״̬23:
+A->d=.H   ;
+H->.E   ;
+H->.l   ;
+E->.TaE   ;
+E->.T   ;
+T->.FmT   a
+T->.F   a
+T->.FmT   ;
+T->.F   ;
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   ;
+F->.(E)   ;
+F->.d   ;
+F->.n   ;
+F->.f   ;
+״̬24:
+V->vA;.   v
+V->vA;.   (
+V->vA;.   d
+V->vA;.   n
+V->vA;.   f
+V->vA;.   #
+״̬25:
+F->(E).   v
+F->(E).   (
+F->(E).   d
+F->(E).   n
+F->(E).   f
+F->(E).   #
+״̬26:
+E->Ta.E   )
+E->.TaE   )
+E->.T   )
+T->.FmT   a
+T->.F   a
+T->.FmT   )
+T->.F   )
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬27:
+T->Fm.T   a
+T->Fm.T   )
+T->.FmT   a
+T->.F   a
+T->.FmT   )
+T->.F   )
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬28:
+F->vd.(G){BR}   m
+F->vd.(G){BR}   a
+F->vd.(G){BR}   )
+״̬29:
+F->(E.)   m
+F->(E.)   a
+F->(E.)   )
+״̬30:
+F->vd(G.){BR}   v
+F->vd(G.){BR}   (
+F->vd(G.){BR}   d
+F->vd(G.){BR}   n
+F->vd(G.){BR}   f
+F->vd(G.){BR}   #
+״̬31:
+G->v.dM   )
+״̬32:
+A->d=H.   ;
+״̬33:
+H->E.   ;
+״̬34:
+H->l.   ;
+״̬35:
+E->T.aE   ;
+E->T.   ;
+״̬36:
+T->F.mT   a
+T->F.   a
+T->F.mT   ;
+T->F.   ;
+״̬37:
+F->v.d(G){BR}   m
+F->v.d(G){BR}   a
+F->v.d(G){BR}   ;
+״̬38:
+F->(.E)   m
+F->(.E)   a
+F->(.E)   ;
+E->.TaE   )
+E->.T   )
+T->.FmT   a
+T->.F   a
+T->.FmT   )
+T->.F   )
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬39:
+F->d.   m
+F->d.   a
+F->d.   ;
+״̬40:
+F->n.   m
+F->n.   a
+F->n.   ;
+״̬41:
+F->f.   m
+F->f.   a
+F->f.   ;
+״̬42:
+E->TaE.   )
+״̬43:
+T->FmT.   a
+T->FmT.   )
+״̬44:
+F->vd(.G){BR}   m
+F->vd(.G){BR}   a
+F->vd(.G){BR}   )
+G->.vdM   )
+״̬45:
+F->(E).   m
+F->(E).   a
+F->(E).   )
+״̬46:
+F->vd(G).{BR}   v
+F->vd(G).{BR}   (
+F->vd(G).{BR}   d
+F->vd(G).{BR}   n
+F->vd(G).{BR}   f
+F->vd(G).{BR}   #
+״̬47:
+G->vd.M   )
+M->.,vdM   )
+M->.$   )
+״̬48:
+E->Ta.E   ;
+E->.TaE   ;
+E->.T   ;
+T->.FmT   a
+T->.F   a
+T->.FmT   ;
+T->.F   ;
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   ;
+F->.(E)   ;
+F->.d   ;
+F->.n   ;
+F->.f   ;
+״̬49:
+T->Fm.T   a
+T->Fm.T   ;
+T->.FmT   a
+T->.F   a
+T->.FmT   ;
+T->.F   ;
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   ;
+F->.(E)   ;
+F->.d   ;
+F->.n   ;
+F->.f   ;
+״̬50:
+F->vd.(G){BR}   m
+F->vd.(G){BR}   a
+F->vd.(G){BR}   ;
+״̬51:
+F->(E.)   m
+F->(E.)   a
+F->(E.)   ;
+״̬52:
+F->vd(G.){BR}   m
+F->vd(G.){BR}   a
+F->vd(G.){BR}   )
+״̬53:
+F->vd(G){.BR}   v
+F->vd(G){.BR}   (
+F->vd(G){.BR}   d
+F->vd(G){.BR}   n
+F->vd(G){.BR}   f
+F->vd(G){.BR}   #
+B->.DB   r
+B->.$   r
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   r
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   r
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   r
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   r
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   r
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   r
+V->.vA;   r
+A->.d=H   ;
+A->.$   ;
+״̬54:
+G->vdM.   )
+״̬55:
+M->,.vdM   )
+״̬56:
+E->TaE.   ;
+״̬57:
+T->FmT.   a
+T->FmT.   ;
+״̬58:
+F->vd(.G){BR}   m
+F->vd(.G){BR}   a
+F->vd(.G){BR}   ;
+G->.vdM   )
+״̬59:
+F->(E).   m
+F->(E).   a
+F->(E).   ;
+״̬60:
+F->vd(G).{BR}   m
+F->vd(G).{BR}   a
+F->vd(G).{BR}   )
+״̬61:
+F->vd(G){B.R}   v
+F->vd(G){B.R}   (
+F->vd(G){B.R}   d
+F->vd(G){B.R}   n
+F->vd(G){B.R}   f
+F->vd(G){B.R}   #
+R->.rF;   }
+״̬62:
+B->D.B   r
+B->.DB   r
+B->.$   r
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   r
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   r
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   r
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   r
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   r
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   r
+V->.vA;   r
+A->.d=H   ;
+A->.$   ;
+״̬63:
+D->V.   v
+D->V.   d
+D->V.   ;
+D->V.   i
+D->V.   w
+D->V.   f
+D->V.   r
+״̬64:
+D->A.;   v
+D->A.;   d
+D->A.;   ;
+D->A.;   i
+D->A.;   w
+D->A.;   f
+D->A.;   r
+״̬65:
+D->i.(C){B}L   v
+D->i.(C){B}L   d
+D->i.(C){B}L   ;
+D->i.(C){B}L   i
+D->i.(C){B}L   w
+D->i.(C){B}L   f
+D->i.(C){B}L   r
+״̬66:
+D->w.(C){B}   v
+D->w.(C){B}   d
+D->w.(C){B}   ;
+D->w.(C){B}   i
+D->w.(C){B}   w
+D->w.(C){B}   f
+D->w.(C){B}   r
+״̬67:
+D->f.(A;C;A){B}   v
+D->f.(A;C;A){B}   d
+D->f.(A;C;A){B}   ;
+D->f.(A;C;A){B}   i
+D->f.(A;C;A){B}   w
+D->f.(A;C;A){B}   f
+D->f.(A;C;A){B}   r
+״̬68:
+V->v.d;   v
+V->v.A;   v
+V->v.d;   d
+V->v.A;   d
+V->v.d;   ;
+V->v.A;   ;
+V->v.d;   i
+V->v.A;   i
+V->v.d;   w
+V->v.A;   w
+V->v.d;   f
+V->v.A;   f
+V->v.d;   r
+V->v.A;   r
+A->.d=H   ;
+A->.$   ;
+״̬69:
+A->d.=H   ;
+״̬70:
+M->,v.dM   )
+״̬71:
+F->vd(G.){BR}   m
+F->vd(G.){BR}   a
+F->vd(G.){BR}   ;
+״̬72:
+F->vd(G){.BR}   m
+F->vd(G){.BR}   a
+F->vd(G){.BR}   )
+B->.DB   r
+B->.$   r
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   r
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   r
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   r
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   r
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   r
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   r
+V->.vA;   r
+A->.d=H   ;
+A->.$   ;
+״̬73:
+F->vd(G){BR.}   v
+F->vd(G){BR.}   (
+F->vd(G){BR.}   d
+F->vd(G){BR.}   n
+F->vd(G){BR.}   f
+F->vd(G){BR.}   #
+״̬74:
+R->r.F;   }
+F->.vd(G){BR}   ;
+F->.(E)   ;
+F->.d   ;
+F->.n   ;
+F->.f   ;
+״̬75:
+B->DB.   r
+״̬76:
+D->A;.   v
+D->A;.   d
+D->A;.   ;
+D->A;.   i
+D->A;.   w
+D->A;.   f
+D->A;.   r
+״̬77:
+D->i(.C){B}L   v
+D->i(.C){B}L   d
+D->i(.C){B}L   ;
+D->i(.C){B}L   i
+D->i(.C){B}L   w
+D->i(.C){B}L   f
+D->i(.C){B}L   r
+C->.FcF   )
+F->.vd(G){BR}   c
+F->.(E)   c
+F->.d   c
+F->.n   c
+F->.f   c
+״̬78:
+D->w(.C){B}   v
+D->w(.C){B}   d
+D->w(.C){B}   ;
+D->w(.C){B}   i
+D->w(.C){B}   w
+D->w(.C){B}   f
+D->w(.C){B}   r
+C->.FcF   )
+F->.vd(G){BR}   c
+F->.(E)   c
+F->.d   c
+F->.n   c
+F->.f   c
+״̬79:
+D->f(.A;C;A){B}   v
+D->f(.A;C;A){B}   d
+D->f(.A;C;A){B}   ;
+D->f(.A;C;A){B}   i
+D->f(.A;C;A){B}   w
+D->f(.A;C;A){B}   f
+D->f(.A;C;A){B}   r
+A->.d=H   ;
+A->.$   ;
+״̬80:
+V->vd.;   v
+V->vd.;   d
+V->vd.;   ;
+V->vd.;   i
+V->vd.;   w
+V->vd.;   f
+V->vd.;   r
+A->d.=H   ;
+״̬81:
+V->vA.;   v
+V->vA.;   d
+V->vA.;   ;
+V->vA.;   i
+V->vA.;   w
+V->vA.;   f
+V->vA.;   r
+״̬82:
+M->,vd.M   )
+M->.,vdM   )
+M->.$   )
+״̬83:
+F->vd(G).{BR}   m
+F->vd(G).{BR}   a
+F->vd(G).{BR}   ;
+״̬84:
+F->vd(G){B.R}   m
+F->vd(G){B.R}   a
+F->vd(G){B.R}   )
+R->.rF;   }
+״̬85:
+F->vd(G){BR}.   v
+F->vd(G){BR}.   (
+F->vd(G){BR}.   d
+F->vd(G){BR}.   n
+F->vd(G){BR}.   f
+F->vd(G){BR}.   #
+״̬86:
+R->rF.;   }
+״̬87:
+F->v.d(G){BR}   ;
+״̬88:
+F->(.E)   ;
+E->.TaE   )
+E->.T   )
+T->.FmT   a
+T->.F   a
+T->.FmT   )
+T->.F   )
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬89:
+F->d.   ;
+״̬90:
+F->n.   ;
+״̬91:
+F->f.   ;
+״̬92:
+D->i(C.){B}L   v
+D->i(C.){B}L   d
+D->i(C.){B}L   ;
+D->i(C.){B}L   i
+D->i(C.){B}L   w
+D->i(C.){B}L   f
+D->i(C.){B}L   r
+״̬93:
+C->F.cF   )
+״̬94:
+F->v.d(G){BR}   c
+״̬95:
+F->(.E)   c
+E->.TaE   )
+E->.T   )
+T->.FmT   a
+T->.F   a
+T->.FmT   )
+T->.F   )
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬96:
+F->d.   c
+״̬97:
+F->n.   c
+״̬98:
+F->f.   c
+״̬99:
+D->w(C.){B}   v
+D->w(C.){B}   d
+D->w(C.){B}   ;
+D->w(C.){B}   i
+D->w(C.){B}   w
+D->w(C.){B}   f
+D->w(C.){B}   r
+״̬100:
+D->f(A.;C;A){B}   v
+D->f(A.;C;A){B}   d
+D->f(A.;C;A){B}   ;
+D->f(A.;C;A){B}   i
+D->f(A.;C;A){B}   w
+D->f(A.;C;A){B}   f
+D->f(A.;C;A){B}   r
+״̬101:
+V->vd;.   v
+V->vd;.   d
+V->vd;.   ;
+V->vd;.   i
+V->vd;.   w
+V->vd;.   f
+V->vd;.   r
+״̬102:
+V->vA;.   v
+V->vA;.   d
+V->vA;.   ;
+V->vA;.   i
+V->vA;.   w
+V->vA;.   f
+V->vA;.   r
+״̬103:
+M->,vdM.   )
+״̬104:
+F->vd(G){.BR}   m
+F->vd(G){.BR}   a
+F->vd(G){.BR}   ;
+B->.DB   r
+B->.$   r
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   r
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   r
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   r
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   r
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   r
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   r
+V->.vA;   r
+A->.d=H   ;
+A->.$   ;
+״̬105:
+F->vd(G){BR.}   m
+F->vd(G){BR.}   a
+F->vd(G){BR.}   )
+״̬106:
+R->rF;.   }
+״̬107:
+F->vd.(G){BR}   ;
+״̬108:
+F->(E.)   ;
+״̬109:
+D->i(C).{B}L   v
+D->i(C).{B}L   d
+D->i(C).{B}L   ;
+D->i(C).{B}L   i
+D->i(C).{B}L   w
+D->i(C).{B}L   f
+D->i(C).{B}L   r
+״̬110:
+C->Fc.F   )
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬111:
+F->vd.(G){BR}   c
+״̬112:
+F->(E.)   c
+״̬113:
+D->w(C).{B}   v
+D->w(C).{B}   d
+D->w(C).{B}   ;
+D->w(C).{B}   i
+D->w(C).{B}   w
+D->w(C).{B}   f
+D->w(C).{B}   r
+״̬114:
+D->f(A;.C;A){B}   v
+D->f(A;.C;A){B}   d
+D->f(A;.C;A){B}   ;
+D->f(A;.C;A){B}   i
+D->f(A;.C;A){B}   w
+D->f(A;.C;A){B}   f
+D->f(A;.C;A){B}   r
+C->.FcF   ;
+F->.vd(G){BR}   c
+F->.(E)   c
+F->.d   c
+F->.n   c
+F->.f   c
+״̬115:
+F->vd(G){B.R}   m
+F->vd(G){B.R}   a
+F->vd(G){B.R}   ;
+R->.rF;   }
+״̬116:
+F->vd(G){BR}.   m
+F->vd(G){BR}.   a
+F->vd(G){BR}.   )
+״̬117:
+F->vd(.G){BR}   ;
+G->.vdM   )
+״̬118:
+F->(E).   ;
+״̬119:
+D->i(C){.B}L   v
+D->i(C){.B}L   d
+D->i(C){.B}L   ;
+D->i(C){.B}L   i
+D->i(C){.B}L   w
+D->i(C){.B}L   f
+D->i(C){.B}L   r
+B->.DB   }
+B->.$   }
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   }
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   }
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   }
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   }
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   }
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   }
+V->.vA;   }
+A->.d=H   ;
+A->.$   ;
+״̬120:
+C->FcF.   )
+״̬121:
+F->v.d(G){BR}   )
+״̬122:
+F->(.E)   )
+E->.TaE   )
+E->.T   )
+T->.FmT   a
+T->.F   a
+T->.FmT   )
+T->.F   )
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬123:
+F->d.   )
+״̬124:
+F->n.   )
+״̬125:
+F->f.   )
+״̬126:
+F->vd(.G){BR}   c
+G->.vdM   )
+״̬127:
+F->(E).   c
+״̬128:
+D->w(C){.B}   v
+D->w(C){.B}   d
+D->w(C){.B}   ;
+D->w(C){.B}   i
+D->w(C){.B}   w
+D->w(C){.B}   f
+D->w(C){.B}   r
+B->.DB   }
+B->.$   }
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   }
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   }
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   }
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   }
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   }
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   }
+V->.vA;   }
+A->.d=H   ;
+A->.$   ;
+״̬129:
+D->f(A;C.;A){B}   v
+D->f(A;C.;A){B}   d
+D->f(A;C.;A){B}   ;
+D->f(A;C.;A){B}   i
+D->f(A;C.;A){B}   w
+D->f(A;C.;A){B}   f
+D->f(A;C.;A){B}   r
+״̬130:
+C->F.cF   ;
+״̬131:
+F->vd(G){BR.}   m
+F->vd(G){BR.}   a
+F->vd(G){BR.}   ;
+״̬132:
+F->vd(G.){BR}   ;
+״̬133:
+D->i(C){B.}L   v
+D->i(C){B.}L   d
+D->i(C){B.}L   ;
+D->i(C){B.}L   i
+D->i(C){B.}L   w
+D->i(C){B.}L   f
+D->i(C){B.}L   r
+״̬134:
+B->D.B   }
+B->.DB   }
+B->.$   }
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   }
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   }
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   }
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   }
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   }
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   }
+V->.vA;   }
+A->.d=H   ;
+A->.$   ;
+״̬135:
+D->V.   v
+D->V.   d
+D->V.   ;
+D->V.   i
+D->V.   w
+D->V.   f
+D->V.   }
+״̬136:
+D->A.;   v
+D->A.;   d
+D->A.;   ;
+D->A.;   i
+D->A.;   w
+D->A.;   f
+D->A.;   }
+״̬137:
+D->i.(C){B}L   v
+D->i.(C){B}L   d
+D->i.(C){B}L   ;
+D->i.(C){B}L   i
+D->i.(C){B}L   w
+D->i.(C){B}L   f
+D->i.(C){B}L   }
+״̬138:
+D->w.(C){B}   v
+D->w.(C){B}   d
+D->w.(C){B}   ;
+D->w.(C){B}   i
+D->w.(C){B}   w
+D->w.(C){B}   f
+D->w.(C){B}   }
+״̬139:
+D->f.(A;C;A){B}   v
+D->f.(A;C;A){B}   d
+D->f.(A;C;A){B}   ;
+D->f.(A;C;A){B}   i
+D->f.(A;C;A){B}   w
+D->f.(A;C;A){B}   f
+D->f.(A;C;A){B}   }
+״̬140:
+V->v.d;   v
+V->v.A;   v
+V->v.d;   d
+V->v.A;   d
+V->v.d;   ;
+V->v.A;   ;
+V->v.d;   i
+V->v.A;   i
+V->v.d;   w
+V->v.A;   w
+V->v.d;   f
+V->v.A;   f
+V->v.d;   }
+V->v.A;   }
+A->.d=H   ;
+A->.$   ;
+״̬141:
+F->vd.(G){BR}   )
+״̬142:
+F->(E.)   )
+״̬143:
+F->vd(G.){BR}   c
+״̬144:
+D->w(C){B.}   v
+D->w(C){B.}   d
+D->w(C){B.}   ;
+D->w(C){B.}   i
+D->w(C){B.}   w
+D->w(C){B.}   f
+D->w(C){B.}   r
+״̬145:
+D->f(A;C;.A){B}   v
+D->f(A;C;.A){B}   d
+D->f(A;C;.A){B}   ;
+D->f(A;C;.A){B}   i
+D->f(A;C;.A){B}   w
+D->f(A;C;.A){B}   f
+D->f(A;C;.A){B}   r
+A->.d=H   )
+A->.$   )
+״̬146:
+C->Fc.F   ;
+F->.vd(G){BR}   ;
+F->.(E)   ;
+F->.d   ;
+F->.n   ;
+F->.f   ;
+״̬147:
+F->vd(G){BR}.   m
+F->vd(G){BR}.   a
+F->vd(G){BR}.   ;
+״̬148:
+F->vd(G).{BR}   ;
+״̬149:
+D->i(C){B}.L   v
+D->i(C){B}.L   d
+D->i(C){B}.L   ;
+D->i(C){B}.L   i
+D->i(C){B}.L   w
+D->i(C){B}.L   f
+D->i(C){B}.L   r
+L->.e{B}   v
+L->.$   v
+L->.e{B}   d
+L->.$   d
+L->.e{B}   ;
+L->.$   ;
+L->.e{B}   i
+L->.$   i
+L->.e{B}   w
+L->.$   w
+L->.e{B}   f
+L->.$   f
+L->.e{B}   r
+L->.$   r
+״̬150:
+B->DB.   }
+״̬151:
+D->A;.   v
+D->A;.   d
+D->A;.   ;
+D->A;.   i
+D->A;.   w
+D->A;.   f
+D->A;.   }
+״̬152:
+D->i(.C){B}L   v
+D->i(.C){B}L   d
+D->i(.C){B}L   ;
+D->i(.C){B}L   i
+D->i(.C){B}L   w
+D->i(.C){B}L   f
+D->i(.C){B}L   }
+C->.FcF   )
+F->.vd(G){BR}   c
+F->.(E)   c
+F->.d   c
+F->.n   c
+F->.f   c
+״̬153:
+D->w(.C){B}   v
+D->w(.C){B}   d
+D->w(.C){B}   ;
+D->w(.C){B}   i
+D->w(.C){B}   w
+D->w(.C){B}   f
+D->w(.C){B}   }
+C->.FcF   )
+F->.vd(G){BR}   c
+F->.(E)   c
+F->.d   c
+F->.n   c
+F->.f   c
+״̬154:
+D->f(.A;C;A){B}   v
+D->f(.A;C;A){B}   d
+D->f(.A;C;A){B}   ;
+D->f(.A;C;A){B}   i
+D->f(.A;C;A){B}   w
+D->f(.A;C;A){B}   f
+D->f(.A;C;A){B}   }
+A->.d=H   ;
+A->.$   ;
+״̬155:
+V->vd.;   v
+V->vd.;   d
+V->vd.;   ;
+V->vd.;   i
+V->vd.;   w
+V->vd.;   f
+V->vd.;   }
+A->d.=H   ;
+״̬156:
+V->vA.;   v
+V->vA.;   d
+V->vA.;   ;
+V->vA.;   i
+V->vA.;   w
+V->vA.;   f
+V->vA.;   }
+״̬157:
+F->vd(.G){BR}   )
+G->.vdM   )
+״̬158:
+F->(E).   )
+״̬159:
+F->vd(G).{BR}   c
+״̬160:
+D->w(C){B}.   v
+D->w(C){B}.   d
+D->w(C){B}.   ;
+D->w(C){B}.   i
+D->w(C){B}.   w
+D->w(C){B}.   f
+D->w(C){B}.   r
+״̬161:
+D->f(A;C;A.){B}   v
+D->f(A;C;A.){B}   d
+D->f(A;C;A.){B}   ;
+D->f(A;C;A.){B}   i
+D->f(A;C;A.){B}   w
+D->f(A;C;A.){B}   f
+D->f(A;C;A.){B}   r
+״̬162:
+A->d.=H   )
+״̬163:
+C->FcF.   ;
+״̬164:
+F->vd(G){.BR}   ;
+B->.DB   r
+B->.$   r
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   r
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   r
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   r
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   r
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   r
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   r
+V->.vA;   r
+A->.d=H   ;
+A->.$   ;
+״̬165:
+D->i(C){B}L.   v
+D->i(C){B}L.   d
+D->i(C){B}L.   ;
+D->i(C){B}L.   i
+D->i(C){B}L.   w
+D->i(C){B}L.   f
+D->i(C){B}L.   r
+״̬166:
+L->e.{B}   v
+L->e.{B}   d
+L->e.{B}   ;
+L->e.{B}   i
+L->e.{B}   w
+L->e.{B}   f
+L->e.{B}   r
+״̬167:
+D->i(C.){B}L   v
+D->i(C.){B}L   d
+D->i(C.){B}L   ;
+D->i(C.){B}L   i
+D->i(C.){B}L   w
+D->i(C.){B}L   f
+D->i(C.){B}L   }
+״̬168:
+D->w(C.){B}   v
+D->w(C.){B}   d
+D->w(C.){B}   ;
+D->w(C.){B}   i
+D->w(C.){B}   w
+D->w(C.){B}   f
+D->w(C.){B}   }
+״̬169:
+D->f(A.;C;A){B}   v
+D->f(A.;C;A){B}   d
+D->f(A.;C;A){B}   ;
+D->f(A.;C;A){B}   i
+D->f(A.;C;A){B}   w
+D->f(A.;C;A){B}   f
+D->f(A.;C;A){B}   }
+״̬170:
+V->vd;.   v
+V->vd;.   d
+V->vd;.   ;
+V->vd;.   i
+V->vd;.   w
+V->vd;.   f
+V->vd;.   }
+״̬171:
+V->vA;.   v
+V->vA;.   d
+V->vA;.   ;
+V->vA;.   i
+V->vA;.   w
+V->vA;.   f
+V->vA;.   }
+״̬172:
+F->vd(G.){BR}   )
+״̬173:
+F->vd(G){.BR}   c
+B->.DB   r
+B->.$   r
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   r
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   r
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   r
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   r
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   r
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   r
+V->.vA;   r
+A->.d=H   ;
+A->.$   ;
+״̬174:
+D->f(A;C;A).{B}   v
+D->f(A;C;A).{B}   d
+D->f(A;C;A).{B}   ;
+D->f(A;C;A).{B}   i
+D->f(A;C;A).{B}   w
+D->f(A;C;A).{B}   f
+D->f(A;C;A).{B}   r
+״̬175:
+A->d=.H   )
+H->.E   )
+H->.l   )
+E->.TaE   )
+E->.T   )
+T->.FmT   a
+T->.F   a
+T->.FmT   )
+T->.F   )
+F->.vd(G){BR}   m
+F->.(E)   m
+F->.d   m
+F->.n   m
+F->.f   m
+F->.vd(G){BR}   a
+F->.(E)   a
+F->.d   a
+F->.n   a
+F->.f   a
+F->.vd(G){BR}   )
+F->.(E)   )
+F->.d   )
+F->.n   )
+F->.f   )
+״̬176:
+F->vd(G){B.R}   ;
+R->.rF;   }
+״̬177:
+L->e{.B}   v
+L->e{.B}   d
+L->e{.B}   ;
+L->e{.B}   i
+L->e{.B}   w
+L->e{.B}   f
+L->e{.B}   r
+B->.DB   }
+B->.$   }
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   }
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   }
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   }
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   }
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   }
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   }
+V->.vA;   }
+A->.d=H   ;
+A->.$   ;
+״̬178:
+D->i(C).{B}L   v
+D->i(C).{B}L   d
+D->i(C).{B}L   ;
+D->i(C).{B}L   i
+D->i(C).{B}L   w
+D->i(C).{B}L   f
+D->i(C).{B}L   }
+״̬179:
+D->w(C).{B}   v
+D->w(C).{B}   d
+D->w(C).{B}   ;
+D->w(C).{B}   i
+D->w(C).{B}   w
+D->w(C).{B}   f
+D->w(C).{B}   }
+״̬180:
+D->f(A;.C;A){B}   v
+D->f(A;.C;A){B}   d
+D->f(A;.C;A){B}   ;
+D->f(A;.C;A){B}   i
+D->f(A;.C;A){B}   w
+D->f(A;.C;A){B}   f
+D->f(A;.C;A){B}   }
+C->.FcF   ;
+F->.vd(G){BR}   c
+F->.(E)   c
+F->.d   c
+F->.n   c
+F->.f   c
+״̬181:
+F->vd(G).{BR}   )
+״̬182:
+F->vd(G){B.R}   c
+R->.rF;   }
+״̬183:
+D->f(A;C;A){.B}   v
+D->f(A;C;A){.B}   d
+D->f(A;C;A){.B}   ;
+D->f(A;C;A){.B}   i
+D->f(A;C;A){.B}   w
+D->f(A;C;A){.B}   f
+D->f(A;C;A){.B}   r
+B->.DB   }
+B->.$   }
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   }
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   }
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   }
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   }
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   }
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   }
+V->.vA;   }
+A->.d=H   ;
+A->.$   ;
+״̬184:
+A->d=H.   )
+״̬185:
+H->E.   )
+״̬186:
+H->l.   )
+״̬187:
+F->vd(G){BR.}   ;
+״̬188:
+L->e{B.}   v
+L->e{B.}   d
+L->e{B.}   ;
+L->e{B.}   i
+L->e{B.}   w
+L->e{B.}   f
+L->e{B.}   r
+״̬189:
+D->i(C){.B}L   v
+D->i(C){.B}L   d
+D->i(C){.B}L   ;
+D->i(C){.B}L   i
+D->i(C){.B}L   w
+D->i(C){.B}L   f
+D->i(C){.B}L   }
+B->.DB   }
+B->.$   }
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   }
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   }
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   }
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   }
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   }
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   }
+V->.vA;   }
+A->.d=H   ;
+A->.$   ;
+״̬190:
+D->w(C){.B}   v
+D->w(C){.B}   d
+D->w(C){.B}   ;
+D->w(C){.B}   i
+D->w(C){.B}   w
+D->w(C){.B}   f
+D->w(C){.B}   }
+B->.DB   }
+B->.$   }
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   }
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   }
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   }
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   }
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   }
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   }
+V->.vA;   }
+A->.d=H   ;
+A->.$   ;
+״̬191:
+D->f(A;C.;A){B}   v
+D->f(A;C.;A){B}   d
+D->f(A;C.;A){B}   ;
+D->f(A;C.;A){B}   i
+D->f(A;C.;A){B}   w
+D->f(A;C.;A){B}   f
+D->f(A;C.;A){B}   }
+״̬192:
+F->vd(G){.BR}   )
+B->.DB   r
+B->.$   r
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   r
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   r
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   r
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   r
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   r
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   r
+V->.vA;   r
+A->.d=H   ;
+A->.$   ;
+״̬193:
+F->vd(G){BR.}   c
+״̬194:
+D->f(A;C;A){B.}   v
+D->f(A;C;A){B.}   d
+D->f(A;C;A){B.}   ;
+D->f(A;C;A){B.}   i
+D->f(A;C;A){B.}   w
+D->f(A;C;A){B.}   f
+D->f(A;C;A){B.}   r
+״̬195:
+F->vd(G){BR}.   ;
+״̬196:
+L->e{B}.   v
+L->e{B}.   d
+L->e{B}.   ;
+L->e{B}.   i
+L->e{B}.   w
+L->e{B}.   f
+L->e{B}.   r
+״̬197:
+D->i(C){B.}L   v
+D->i(C){B.}L   d
+D->i(C){B.}L   ;
+D->i(C){B.}L   i
+D->i(C){B.}L   w
+D->i(C){B.}L   f
+D->i(C){B.}L   }
+״̬198:
+D->w(C){B.}   v
+D->w(C){B.}   d
+D->w(C){B.}   ;
+D->w(C){B.}   i
+D->w(C){B.}   w
+D->w(C){B.}   f
+D->w(C){B.}   }
+״̬199:
+D->f(A;C;.A){B}   v
+D->f(A;C;.A){B}   d
+D->f(A;C;.A){B}   ;
+D->f(A;C;.A){B}   i
+D->f(A;C;.A){B}   w
+D->f(A;C;.A){B}   f
+D->f(A;C;.A){B}   }
+A->.d=H   )
+A->.$   )
+״̬200:
+F->vd(G){B.R}   )
+R->.rF;   }
+״̬201:
+F->vd(G){BR}.   c
+״̬202:
+D->f(A;C;A){B}.   v
+D->f(A;C;A){B}.   d
+D->f(A;C;A){B}.   ;
+D->f(A;C;A){B}.   i
+D->f(A;C;A){B}.   w
+D->f(A;C;A){B}.   f
+D->f(A;C;A){B}.   r
+״̬203:
+D->i(C){B}.L   v
+D->i(C){B}.L   d
+D->i(C){B}.L   ;
+D->i(C){B}.L   i
+D->i(C){B}.L   w
+D->i(C){B}.L   f
+D->i(C){B}.L   }
+L->.e{B}   v
+L->.$   v
+L->.e{B}   d
+L->.$   d
+L->.e{B}   ;
+L->.$   ;
+L->.e{B}   i
+L->.$   i
+L->.e{B}   w
+L->.$   w
+L->.e{B}   f
+L->.$   f
+L->.e{B}   }
+L->.$   }
+״̬204:
+D->w(C){B}.   v
+D->w(C){B}.   d
+D->w(C){B}.   ;
+D->w(C){B}.   i
+D->w(C){B}.   w
+D->w(C){B}.   f
+D->w(C){B}.   }
+״̬205:
+D->f(A;C;A.){B}   v
+D->f(A;C;A.){B}   d
+D->f(A;C;A.){B}   ;
+D->f(A;C;A.){B}   i
+D->f(A;C;A.){B}   w
+D->f(A;C;A.){B}   f
+D->f(A;C;A.){B}   }
+״̬206:
+F->vd(G){BR.}   )
+״̬207:
+D->i(C){B}L.   v
+D->i(C){B}L.   d
+D->i(C){B}L.   ;
+D->i(C){B}L.   i
+D->i(C){B}L.   w
+D->i(C){B}L.   f
+D->i(C){B}L.   }
+״̬208:
+L->e.{B}   v
+L->e.{B}   d
+L->e.{B}   ;
+L->e.{B}   i
+L->e.{B}   w
+L->e.{B}   f
+L->e.{B}   }
+״̬209:
+D->f(A;C;A).{B}   v
+D->f(A;C;A).{B}   d
+D->f(A;C;A).{B}   ;
+D->f(A;C;A).{B}   i
+D->f(A;C;A).{B}   w
+D->f(A;C;A).{B}   f
+D->f(A;C;A).{B}   }
+״̬210:
+F->vd(G){BR}.   )
+״̬211:
+L->e{.B}   v
+L->e{.B}   d
+L->e{.B}   ;
+L->e{.B}   i
+L->e{.B}   w
+L->e{.B}   f
+L->e{.B}   }
+B->.DB   }
+B->.$   }
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   }
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   }
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   }
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   }
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   }
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   }
+V->.vA;   }
+A->.d=H   ;
+A->.$   ;
+״̬212:
+D->f(A;C;A){.B}   v
+D->f(A;C;A){.B}   d
+D->f(A;C;A){.B}   ;
+D->f(A;C;A){.B}   i
+D->f(A;C;A){.B}   w
+D->f(A;C;A){.B}   f
+D->f(A;C;A){.B}   }
+B->.DB   }
+B->.$   }
+D->.V   v
+D->.V   d
+D->.V   ;
+D->.V   i
+D->.V   w
+D->.V   f
+D->.V   }
+D->.A;   v
+D->.A;   d
+D->.A;   ;
+D->.A;   i
+D->.A;   w
+D->.A;   f
+D->.A;   }
+D->.i(C){B}L   v
+D->.i(C){B}L   d
+D->.i(C){B}L   ;
+D->.i(C){B}L   i
+D->.i(C){B}L   w
+D->.i(C){B}L   f
+D->.i(C){B}L   }
+D->.w(C){B}   v
+D->.w(C){B}   d
+D->.w(C){B}   ;
+D->.w(C){B}   i
+D->.w(C){B}   w
+D->.w(C){B}   f
+D->.w(C){B}   }
+D->.f(A;C;A){B}   v
+D->.f(A;C;A){B}   d
+D->.f(A;C;A){B}   ;
+D->.f(A;C;A){B}   i
+D->.f(A;C;A){B}   w
+D->.f(A;C;A){B}   f
+D->.f(A;C;A){B}   }
+V->.vd;   v
+V->.vA;   v
+V->.vd;   d
+V->.vA;   d
+V->.vd;   ;
+V->.vA;   ;
+V->.vd;   i
+V->.vA;   i
+V->.vd;   w
+V->.vA;   w
+V->.vd;   f
+V->.vA;   f
+V->.vd;   }
+V->.vA;   }
+A->.d=H   ;
+A->.$   ;
+״̬213:
+L->e{B.}   v
+L->e{B.}   d
+L->e{B.}   ;
+L->e{B.}   i
+L->e{B.}   w
+L->e{B.}   f
+L->e{B.}   }
+״̬214:
+D->f(A;C;A){B.}   v
+D->f(A;C;A){B.}   d
+D->f(A;C;A){B.}   ;
+D->f(A;C;A){B.}   i
+D->f(A;C;A){B.}   w
+D->f(A;C;A){B.}   f
+D->f(A;C;A){B.}   }
+״̬215:
+L->e{B}.   v
+L->e{B}.   d
+L->e{B}.   ;
+L->e{B}.   i
+L->e{B}.   w
+L->e{B}.   f
+L->e{B}.   }
+״̬216:
+D->f(A;C;A){B}.   v
+D->f(A;C;A){B}.   d
+D->f(A;C;A){B}.   ;
+D->f(A;C;A){B}.   i
+D->f(A;C;A){B}.   w
+D->f(A;C;A){B}.   f
+D->f(A;C;A){B}.   }
+go����
+0 S 1
+0 V 2
+0 F 3
+0 v 4
+0 ( 5
+0 d 6
+0 n 7
+0 f 8
+2 S 9
+2 V 2
+2 F 3
+2 v 4
+2 ( 5
+2 d 6
+2 n 7
+2 f 8
+3 S 10
+3 V 2
+3 F 3
+3 v 4
+3 ( 5
+3 d 6
+3 n 7
+3 f 8
+4 d 11
+4 A 12
+5 E 13
+5 T 14
+5 F 15
+5 v 16
+5 ( 17
+5 d 18
+5 n 19
+5 f 20
+11 ; 21
+11 ( 22
+11 = 23
+12 ; 24
+13 ) 25
+14 a 26
+15 m 27
+16 d 28
+17 E 29
+17 T 14
+17 F 15
+17 v 16
+17 ( 17
+17 d 18
+17 n 19
+17 f 20
+22 G 30
+22 v 31
+23 H 32
+23 E 33
+23 l 34
+23 T 35
+23 F 36
+23 v 37
+23 ( 38
+23 d 39
+23 n 40
+23 f 41
+26 E 42
+26 T 14
+26 F 15
+26 v 16
+26 ( 17
+26 d 18
+26 n 19
+26 f 20
+27 T 43
+27 F 15
+27 v 16
+27 ( 17
+27 d 18
+27 n 19
+27 f 20
+28 ( 44
+29 ) 45
+30 ) 46
+31 d 47
+35 a 48
+36 m 49
+37 d 50
+38 E 51
+38 T 14
+38 F 15
+38 v 16
+38 ( 17
+38 d 18
+38 n 19
+38 f 20
+44 G 52
+44 v 31
+46 { 53
+47 M 54
+47 , 55
+48 E 56
+48 T 35
+48 F 36
+48 v 37
+48 ( 38
+48 d 39
+48 n 40
+48 f 41
+49 T 57
+49 F 36
+49 v 37
+49 ( 38
+49 d 39
+49 n 40
+49 f 41
+50 ( 58
+51 ) 59
+52 ) 60
+53 B 61
+53 D 62
+53 V 63
+53 A 64
+53 i 65
+53 w 66
+53 f 67
+53 v 68
+53 d 69
+55 v 70
+58 G 71
+58 v 31
+60 { 72
+61 R 73
+61 r 74
+62 B 75
+62 D 62
+62 V 63
+62 A 64
+62 i 65
+62 w 66
+62 f 67
+62 v 68
+62 d 69
+64 ; 76
+65 ( 77
+66 ( 78
+67 ( 79
+68 d 80
+68 A 81
+69 = 23
+70 d 82
+71 ) 83
+72 B 84
+72 D 62
+72 V 63
+72 A 64
+72 i 65
+72 w 66
+72 f 67
+72 v 68
+72 d 69
+73 } 85
+74 F 86
+74 v 87
+74 ( 88
+74 d 89
+74 n 90
+74 f 91
+77 C 92
+77 F 93
+77 v 94
+77 ( 95
+77 d 96
+77 n 97
+77 f 98
+78 C 99
+78 F 93
+78 v 94
+78 ( 95
+78 d 96
+78 n 97
+78 f 98
+79 A 100
+79 d 69
+80 ; 101
+80 = 23
+81 ; 102
+82 M 103
+82 , 55
+83 { 104
+84 R 105
+84 r 74
+86 ; 106
+87 d 107
+88 E 108
+88 T 14
+88 F 15
+88 v 16
+88 ( 17
+88 d 18
+88 n 19
+88 f 20
+92 ) 109
+93 c 110
+94 d 111
+95 E 112
+95 T 14
+95 F 15
+95 v 16
+95 ( 17
+95 d 18
+95 n 19
+95 f 20
+99 ) 113
+100 ; 114
+104 B 115
+104 D 62
+104 V 63
+104 A 64
+104 i 65
+104 w 66
+104 f 67
+104 v 68
+104 d 69
+105 } 116
+107 ( 117
+108 ) 118
+109 { 119
+110 F 120
+110 v 121
+110 ( 122
+110 d 123
+110 n 124
+110 f 125
+111 ( 126
+112 ) 127
+113 { 128
+114 C 129
+114 F 130
+114 v 94
+114 ( 95
+114 d 96
+114 n 97
+114 f 98
+115 R 131
+115 r 74
+117 G 132
+117 v 31
+119 B 133
+119 D 134
+119 V 135
+119 A 136
+119 i 137
+119 w 138
+119 f 139
+119 v 140
+119 d 69
+121 d 141
+122 E 142
+122 T 14
+122 F 15
+122 v 16
+122 ( 17
+122 d 18
+122 n 19
+122 f 20
+126 G 143
+126 v 31
+128 B 144
+128 D 134
+128 V 135
+128 A 136
+128 i 137
+128 w 138
+128 f 139
+128 v 140
+128 d 69
+129 ; 145
+130 c 146
+131 } 147
+132 ) 148
+133 } 149
+134 B 150
+134 D 134
+134 V 135
+134 A 136
+134 i 137
+134 w 138
+134 f 139
+134 v 140
+134 d 69
+136 ; 151
+137 ( 152
+138 ( 153
+139 ( 154
+140 d 155
+140 A 156
+141 ( 157
+142 ) 158
+143 ) 159
+144 } 160
+145 A 161
+145 d 162
+146 F 163
+146 v 87
+146 ( 88
+146 d 89
+146 n 90
+146 f 91
+148 { 164
+149 L 165
+149 e 166
+152 C 167
+152 F 93
+152 v 94
+152 ( 95
+152 d 96
+152 n 97
+152 f 98
+153 C 168
+153 F 93
+153 v 94
+153 ( 95
+153 d 96
+153 n 97
+153 f 98
+154 A 169
+154 d 69
+155 ; 170
+155 = 23
+156 ; 171
+157 G 172
+157 v 31
+159 { 173
+161 ) 174
+162 = 175
+164 B 176
+164 D 62
+164 V 63
+164 A 64
+164 i 65
+164 w 66
+164 f 67
+164 v 68
+164 d 69
+166 { 177
+167 ) 178
+168 ) 179
+169 ; 180
+172 ) 181
+173 B 182
+173 D 62
+173 V 63
+173 A 64
+173 i 65
+173 w 66
+173 f 67
+173 v 68
+173 d 69
+174 { 183
+175 H 184
+175 E 185
+175 l 186
+175 T 14
+175 F 15
+175 v 16
+175 ( 17
+175 d 18
+175 n 19
+175 f 20
+176 R 187
+176 r 74
+177 B 188
+177 D 134
+177 V 135
+177 A 136
+177 i 137
+177 w 138
+177 f 139
+177 v 140
+177 d 69
+178 { 189
+179 { 190
+180 C 191
+180 F 130
+180 v 94
+180 ( 95
+180 d 96
+180 n 97
+180 f 98
+181 { 192
+182 R 193
+182 r 74
+183 B 194
+183 D 134
+183 V 135
+183 A 136
+183 i 137
+183 w 138
+183 f 139
+183 v 140
+183 d 69
+187 } 195
+188 } 196
+189 B 197
+189 D 134
+189 V 135
+189 A 136
+189 i 137
+189 w 138
+189 f 139
+189 v 140
+189 d 69
+190 B 198
+190 D 134
+190 V 135
+190 A 136
+190 i 137
+190 w 138
+190 f 139
+190 v 140
+190 d 69
+191 ; 199
+192 B 200
+192 D 62
+192 V 63
+192 A 64
+192 i 65
+192 w 66
+192 f 67
+192 v 68
+192 d 69
+193 } 201
+194 } 202
+197 } 203
+198 } 204
+199 A 205
+199 d 162
+200 R 206
+200 r 74
+203 L 207
+203 e 208
+205 ) 209
+206 } 210
+208 { 211
+209 { 212
+211 B 213
+211 D 134
+211 V 135
+211 A 136
+211 i 137
+211 w 138
+211 f 139
+211 v 140
+211 d 69
+212 B 214
+212 D 134
+212 V 135
+212 A 136
+212 i 137
+212 w 138
+212 f 139
+212 v 140
+212 d 69
+213 } 215
+214 } 216
+action������:
+                   $         v         d         ;         =         (         )         {         }         ,         i         w         f         e         l         a         m         n         c         r        #
+         0        -1        S4        S6        -1        -1        S5        -1        -1        -1        -1        -1        -1        S8        -1        -1        -1        -1        S7        -1        -1        r3
+         1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       acc
+         2        -1        S4        S6        -1        -1        S5        -1        -1        -1        -1        -1        -1        S8        -1        -1        -1        -1        S7        -1        -1        r3
+         3        -1        S4        S6        -1        -1        S5        -1        -1        -1        -1        -1        -1        S8        -1        -1        -1        -1        S7        -1        -1        r3
+         4        -1        -1       S11        r9        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+         5        -1       S16       S18        -1        -1       S17        -1        -1        -1        -1        -1        -1       S20        -1        -1        -1        -1       S19        -1        -1        -1
+         6        -1       r28       r28        -1        -1       r28        -1        -1        -1        -1        -1        -1       r28        -1        -1        -1        -1       r28        -1        -1       r28
+         7        -1       r29       r29        -1        -1       r29        -1        -1        -1        -1        -1        -1       r29        -1        -1        -1        -1       r29        -1        -1       r29
+         8        -1       r30       r30        -1        -1       r30        -1        -1        -1        -1        -1        -1       r30        -1        -1        -1        -1       r30        -1        -1       r30
+         9        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        r1
+        10        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        r2
+        11        -1        -1        -1       S21       S23       S22        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        12        -1        -1        -1       S24        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        13        -1        -1        -1        -1        -1        -1       S25        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        14        -1        -1        -1        -1        -1        -1       r24        -1        -1        -1        -1        -1        -1        -1        -1       S26        -1        -1        -1        -1        -1
+        15        -1        -1        -1        -1        -1        -1       r26        -1        -1        -1        -1        -1        -1        -1        -1       r26       S27        -1        -1        -1        -1
+        16        -1        -1       S28        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        17        -1       S16       S18        -1        -1       S17        -1        -1        -1        -1        -1        -1       S20        -1        -1        -1        -1       S19        -1        -1        -1
+        18        -1        -1        -1        -1        -1        -1       r28        -1        -1        -1        -1        -1        -1        -1        -1       r28       r28        -1        -1        -1        -1
+        19        -1        -1        -1        -1        -1        -1       r29        -1        -1        -1        -1        -1        -1        -1        -1       r29       r29        -1        -1        -1        -1
+        20        -1        -1        -1        -1        -1        -1       r30        -1        -1        -1        -1        -1        -1        -1        -1       r30       r30        -1        -1        -1        -1
+        21        -1        r4        r4        -1        -1        r4        -1        -1        -1        -1        -1        -1        r4        -1        -1        -1        -1        r4        -1        -1        r4
+        22        -1       S31        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        23        -1       S37       S39        -1        -1       S38        -1        -1        -1        -1        -1        -1       S41        -1       S34        -1        -1       S40        -1        -1        -1
+        24        -1        r5        r5        -1        -1        r5        -1        -1        -1        -1        -1        -1        r5        -1        -1        -1        -1        r5        -1        -1        r5
+        25        -1       r27       r27        -1        -1       r27        -1        -1        -1        -1        -1        -1       r27        -1        -1        -1        -1       r27        -1        -1       r27
+        26        -1       S16       S18        -1        -1       S17        -1        -1        -1        -1        -1        -1       S20        -1        -1        -1        -1       S19        -1        -1        -1
+        27        -1       S16       S18        -1        -1       S17        -1        -1        -1        -1        -1        -1       S20        -1        -1        -1        -1       S19        -1        -1        -1
+        28        -1        -1        -1        -1        -1       S44        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        29        -1        -1        -1        -1        -1        -1       S45        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        30        -1        -1        -1        -1        -1        -1       S46        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        31        -1        -1       S47        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        32        -1        -1        -1        r6        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        33        -1        -1        -1       r21        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        34        -1        -1        -1       r22        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        35        -1        -1        -1       r24        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       S48        -1        -1        -1        -1        -1
+        36        -1        -1        -1       r26        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r26       S49        -1        -1        -1        -1
+        37        -1        -1       S50        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        38        -1       S16       S18        -1        -1       S17        -1        -1        -1        -1        -1        -1       S20        -1        -1        -1        -1       S19        -1        -1        -1
+        39        -1        -1        -1       r28        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r28       r28        -1        -1        -1        -1
+        40        -1        -1        -1       r29        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r29       r29        -1        -1        -1        -1
+        41        -1        -1        -1       r30        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r30       r30        -1        -1        -1        -1
+        42        -1        -1        -1        -1        -1        -1       r23        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        43        -1        -1        -1        -1        -1        -1       r25        -1        -1        -1        -1        -1        -1        -1        -1       r25        -1        -1        -1        -1        -1
+        44        -1       S31        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        45        -1        -1        -1        -1        -1        -1       r27        -1        -1        -1        -1        -1        -1        -1        -1       r27       r27        -1        -1        -1        -1
+        46        -1        -1        -1        -1        -1        -1        -1       S53        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        47        -1        -1        -1        -1        -1        -1       r11        -1        -1       S55        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        48        -1       S37       S39        -1        -1       S38        -1        -1        -1        -1        -1        -1       S41        -1        -1        -1        -1       S40        -1        -1        -1
+        49        -1       S37       S39        -1        -1       S38        -1        -1        -1        -1        -1        -1       S41        -1        -1        -1        -1       S40        -1        -1        -1
+        50        -1        -1        -1        -1        -1       S58        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        51        -1        -1        -1        -1        -1        -1       S59        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        52        -1        -1        -1        -1        -1        -1       S60        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        53        -1       S68       S69        r9        -1        -1        -1        -1        -1        -1       S65       S66       S67        -1        -1        -1        -1        -1        -1       r13        -1
+        54        -1        -1        -1        -1        -1        -1        r8        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        55        -1       S70        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        56        -1        -1        -1       r23        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        57        -1        -1        -1       r25        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r25        -1        -1        -1        -1        -1
+        58        -1       S31        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        59        -1        -1        -1       r27        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r27       r27        -1        -1        -1        -1
+        60        -1        -1        -1        -1        -1        -1        -1       S72        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        61        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       S74        -1
+        62        -1       S68       S69        r9        -1        -1        -1        -1        -1        -1       S65       S66       S67        -1        -1        -1        -1        -1        -1       r13        -1
+        63        -1       r14       r14       r14        -1        -1        -1        -1        -1        -1       r14       r14       r14        -1        -1        -1        -1        -1        -1       r14        -1
+        64        -1        -1        -1       S76        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        65        -1        -1        -1        -1        -1       S77        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        66        -1        -1        -1        -1        -1       S78        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        67        -1        -1        -1        -1        -1       S79        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        68        -1        -1       S80        r9        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        69        -1        -1        -1        -1       S23        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        70        -1        -1       S82        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        71        -1        -1        -1        -1        -1        -1       S83        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        72        -1       S68       S69        r9        -1        -1        -1        -1        -1        -1       S65       S66       S67        -1        -1        -1        -1        -1        -1       r13        -1
+        73        -1        -1        -1        -1        -1        -1        -1        -1       S85        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        74        -1       S87       S89        -1        -1       S88        -1        -1        -1        -1        -1        -1       S91        -1        -1        -1        -1       S90        -1        -1        -1
+        75        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r12        -1
+        76        -1       r15       r15       r15        -1        -1        -1        -1        -1        -1       r15       r15       r15        -1        -1        -1        -1        -1        -1       r15        -1
+        77        -1       S94       S96        -1        -1       S95        -1        -1        -1        -1        -1        -1       S98        -1        -1        -1        -1       S97        -1        -1        -1
+        78        -1       S94       S96        -1        -1       S95        -1        -1        -1        -1        -1        -1       S98        -1        -1        -1        -1       S97        -1        -1        -1
+        79        -1        -1       S69        r9        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        80        -1        -1        -1      S101       S23        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        81        -1        -1        -1      S102        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        82        -1        -1        -1        -1        -1        -1       r11        -1        -1       S55        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        83        -1        -1        -1        -1        -1        -1        -1      S104        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        84        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       S74        -1
+        85        -1        r7        r7        -1        -1        r7        -1        -1        -1        -1        -1        -1        r7        -1        -1        -1        -1        r7        -1        -1        r7
+        86        -1        -1        -1      S106        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        87        -1        -1      S107        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        88        -1       S16       S18        -1        -1       S17        -1        -1        -1        -1        -1        -1       S20        -1        -1        -1        -1       S19        -1        -1        -1
+        89        -1        -1        -1       r28        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        90        -1        -1        -1       r29        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        91        -1        -1        -1       r30        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        92        -1        -1        -1        -1        -1        -1      S109        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        93        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1      S110        -1        -1
+        94        -1        -1      S111        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+        95        -1       S16       S18        -1        -1       S17        -1        -1        -1        -1        -1        -1       S20        -1        -1        -1        -1       S19        -1        -1        -1
+        96        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r28        -1        -1
+        97        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r29        -1        -1
+        98        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r30        -1        -1
+        99        -1        -1        -1        -1        -1        -1      S113        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       100        -1        -1        -1      S114        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       101        -1        r4        r4        r4        -1        -1        -1        -1        -1        -1        r4        r4        r4        -1        -1        -1        -1        -1        -1        r4        -1
+       102        -1        r5        r5        r5        -1        -1        -1        -1        -1        -1        r5        r5        r5        -1        -1        -1        -1        -1        -1        r5        -1
+       103        -1        -1        -1        -1        -1        -1       r10        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       104        -1       S68       S69        r9        -1        -1        -1        -1        -1        -1       S65       S66       S67        -1        -1        -1        -1        -1        -1       r13        -1
+       105        -1        -1        -1        -1        -1        -1        -1        -1      S116        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       106        -1        -1        -1        -1        -1        -1        -1        -1       r32        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       107        -1        -1        -1        -1        -1      S117        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       108        -1        -1        -1        -1        -1        -1      S118        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       109        -1        -1        -1        -1        -1        -1        -1      S119        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       110        -1      S121      S123        -1        -1      S122        -1        -1        -1        -1        -1        -1      S125        -1        -1        -1        -1      S124        -1        -1        -1
+       111        -1        -1        -1        -1        -1      S126        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       112        -1        -1        -1        -1        -1        -1      S127        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       113        -1        -1        -1        -1        -1        -1        -1      S128        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       114        -1       S94       S96        -1        -1       S95        -1        -1        -1        -1        -1        -1       S98        -1        -1        -1        -1       S97        -1        -1        -1
+       115        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       S74        -1
+       116        -1        -1        -1        -1        -1        -1        r7        -1        -1        -1        -1        -1        -1        -1        -1        r7        r7        -1        -1        -1        -1
+       117        -1       S31        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       118        -1        -1        -1       r27        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       119        -1      S140       S69        r9        -1        -1        -1        -1       r13        -1      S137      S138      S139        -1        -1        -1        -1        -1        -1        -1        -1
+       120        -1        -1        -1        -1        -1        -1       r31        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       121        -1        -1      S141        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       122        -1       S16       S18        -1        -1       S17        -1        -1        -1        -1        -1        -1       S20        -1        -1        -1        -1       S19        -1        -1        -1
+       123        -1        -1        -1        -1        -1        -1       r28        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       124        -1        -1        -1        -1        -1        -1       r29        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       125        -1        -1        -1        -1        -1        -1       r30        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       126        -1       S31        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       127        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       r27        -1        -1
+       128        -1      S140       S69        r9        -1        -1        -1        -1       r13        -1      S137      S138      S139        -1        -1        -1        -1        -1        -1        -1        -1
+       129        -1        -1        -1      S145        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       130        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1      S146        -1        -1
+       131        -1        -1        -1        -1        -1        -1        -1        -1      S147        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       132        -1        -1        -1        -1        -1        -1      S148        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       133        -1        -1        -1        -1        -1        -1        -1        -1      S149        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       134        -1      S140       S69        r9        -1        -1        -1        -1       r13        -1      S137      S138      S139        -1        -1        -1        -1        -1        -1        -1        -1
+       135        -1       r14       r14       r14        -1        -1        -1        -1       r14        -1       r14       r14       r14        -1        -1        -1        -1        -1        -1        -1        -1
+       136        -1        -1        -1      S151        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       137        -1        -1        -1        -1        -1      S152        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       138        -1        -1        -1        -1        -1      S153        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       139        -1        -1        -1        -1        -1      S154        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       140        -1        -1      S155        r9        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       141        -1        -1        -1        -1        -1      S157        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       142        -1        -1        -1        -1        -1        -1      S158        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       143        -1        -1        -1        -1        -1        -1      S159        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       144        -1        -1        -1        -1        -1        -1        -1        -1      S160        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       145        -1        -1      S162        -1        -1        -1        r9        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       146        -1       S87       S89        -1        -1       S88        -1        -1        -1        -1        -1        -1       S91        -1        -1        -1        -1       S90        -1        -1        -1
+       147        -1        -1        -1        r7        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        r7        r7        -1        -1        -1        -1
+       148        -1        -1        -1        -1        -1        -1        -1      S164        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       149        -1       r20       r20       r20        -1        -1        -1        -1        -1        -1       r20       r20       r20      S166        -1        -1        -1        -1        -1       r20        -1
+       150        -1        -1        -1        -1        -1        -1        -1        -1       r12        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       151        -1       r15       r15       r15        -1        -1        -1        -1       r15        -1       r15       r15       r15        -1        -1        -1        -1        -1        -1        -1        -1
+       152        -1       S94       S96        -1        -1       S95        -1        -1        -1        -1        -1        -1       S98        -1        -1        -1        -1       S97        -1        -1        -1
+       153        -1       S94       S96        -1        -1       S95        -1        -1        -1        -1        -1        -1       S98        -1        -1        -1        -1       S97        -1        -1        -1
+       154        -1        -1       S69        r9        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       155        -1        -1        -1      S170       S23        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       156        -1        -1        -1      S171        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       157        -1       S31        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       158        -1        -1        -1        -1        -1        -1       r27        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       159        -1        -1        -1        -1        -1        -1        -1      S173        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       160        -1       r17       r17       r17        -1        -1        -1        -1        -1        -1       r17       r17       r17        -1        -1        -1        -1        -1        -1       r17        -1
+       161        -1        -1        -1        -1        -1        -1      S174        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       162        -1        -1        -1        -1      S175        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       163        -1        -1        -1       r31        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       164        -1       S68       S69        r9        -1        -1        -1        -1        -1        -1       S65       S66       S67        -1        -1        -1        -1        -1        -1       r13        -1
+       165        -1       r16       r16       r16        -1        -1        -1        -1        -1        -1       r16       r16       r16        -1        -1        -1        -1        -1        -1       r16        -1
+       166        -1        -1        -1        -1        -1        -1        -1      S177        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       167        -1        -1        -1        -1        -1        -1      S178        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       168        -1        -1        -1        -1        -1        -1      S179        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       169        -1        -1        -1      S180        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       170        -1        r4        r4        r4        -1        -1        -1        -1        r4        -1        r4        r4        r4        -1        -1        -1        -1        -1        -1        -1        -1
+       171        -1        r5        r5        r5        -1        -1        -1        -1        r5        -1        r5        r5        r5        -1        -1        -1        -1        -1        -1        -1        -1
+       172        -1        -1        -1        -1        -1        -1      S181        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       173        -1       S68       S69        r9        -1        -1        -1        -1        -1        -1       S65       S66       S67        -1        -1        -1        -1        -1        -1       r13        -1
+       174        -1        -1        -1        -1        -1        -1        -1      S183        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       175        -1       S16       S18        -1        -1       S17        -1        -1        -1        -1        -1        -1       S20        -1      S186        -1        -1       S19        -1        -1        -1
+       176        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       S74        -1
+       177        -1      S140       S69        r9        -1        -1        -1        -1       r13        -1      S137      S138      S139        -1        -1        -1        -1        -1        -1        -1        -1
+       178        -1        -1        -1        -1        -1        -1        -1      S189        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       179        -1        -1        -1        -1        -1        -1        -1      S190        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       180        -1       S94       S96        -1        -1       S95        -1        -1        -1        -1        -1        -1       S98        -1        -1        -1        -1       S97        -1        -1        -1
+       181        -1        -1        -1        -1        -1        -1        -1      S192        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       182        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       S74        -1
+       183        -1      S140       S69        r9        -1        -1        -1        -1       r13        -1      S137      S138      S139        -1        -1        -1        -1        -1        -1        -1        -1
+       184        -1        -1        -1        -1        -1        -1        r6        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       185        -1        -1        -1        -1        -1        -1       r21        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       186        -1        -1        -1        -1        -1        -1       r22        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       187        -1        -1        -1        -1        -1        -1        -1        -1      S195        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       188        -1        -1        -1        -1        -1        -1        -1        -1      S196        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       189        -1      S140       S69        r9        -1        -1        -1        -1       r13        -1      S137      S138      S139        -1        -1        -1        -1        -1        -1        -1        -1
+       190        -1      S140       S69        r9        -1        -1        -1        -1       r13        -1      S137      S138      S139        -1        -1        -1        -1        -1        -1        -1        -1
+       191        -1        -1        -1      S199        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       192        -1       S68       S69        r9        -1        -1        -1        -1        -1        -1       S65       S66       S67        -1        -1        -1        -1        -1        -1       r13        -1
+       193        -1        -1        -1        -1        -1        -1        -1        -1      S201        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       194        -1        -1        -1        -1        -1        -1        -1        -1      S202        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       195        -1        -1        -1        r7        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       196        -1       r19       r19       r19        -1        -1        -1        -1        -1        -1       r19       r19       r19        -1        -1        -1        -1        -1        -1       r19        -1
+       197        -1        -1        -1        -1        -1        -1        -1        -1      S203        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       198        -1        -1        -1        -1        -1        -1        -1        -1      S204        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       199        -1        -1      S162        -1        -1        -1        r9        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       200        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1       S74        -1
+       201        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        r7        -1        -1
+       202        -1       r18       r18       r18        -1        -1        -1        -1        -1        -1       r18       r18       r18        -1        -1        -1        -1        -1        -1       r18        -1
+       203        -1       r20       r20       r20        -1        -1        -1        -1       r20        -1       r20       r20       r20      S208        -1        -1        -1        -1        -1        -1        -1
+       204        -1       r17       r17       r17        -1        -1        -1        -1       r17        -1       r17       r17       r17        -1        -1        -1        -1        -1        -1        -1        -1
+       205        -1        -1        -1        -1        -1        -1      S209        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       206        -1        -1        -1        -1        -1        -1        -1        -1      S210        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       207        -1       r16       r16       r16        -1        -1        -1        -1       r16        -1       r16       r16       r16        -1        -1        -1        -1        -1        -1        -1        -1
+       208        -1        -1        -1        -1        -1        -1        -1      S211        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       209        -1        -1        -1        -1        -1        -1        -1      S212        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       210        -1        -1        -1        -1        -1        -1        r7        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       211        -1      S140       S69        r9        -1        -1        -1        -1       r13        -1      S137      S138      S139        -1        -1        -1        -1        -1        -1        -1        -1
+       212        -1      S140       S69        r9        -1        -1        -1        -1       r13        -1      S137      S138      S139        -1        -1        -1        -1        -1        -1        -1        -1
+       213        -1        -1        -1        -1        -1        -1        -1        -1      S215        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       214        -1        -1        -1        -1        -1        -1        -1        -1      S216        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1        -1
+       215        -1       r19       r19       r19        -1        -1        -1        -1       r19        -1       r19       r19       r19        -1        -1        -1        -1        -1        -1        -1        -1
+       216        -1       r18       r18       r18        -1        -1        -1        -1       r18        -1       r18       r18       r18        -1        -1        -1        -1        -1        -1        -1        -1
+goto������:
+         @    S    V    F    A    H    G    B    R    M    D    C    L    E    T
+    0    1    2    3   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+    1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+    2    9    2    3   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+    3   10    2    3   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+    4   -1   -1   -1   12   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+    5   -1   -1   15   -1   -1   -1   -1   -1   -1   -1   -1   -1   13   14
+    6   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+    7   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+    8   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+    9   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   10   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   11   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   12   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   13   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   14   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   15   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   16   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   17   -1   -1   15   -1   -1   -1   -1   -1   -1   -1   -1   -1   29   14
+   18   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   19   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   20   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   21   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   22   -1   -1   -1   -1   -1   30   -1   -1   -1   -1   -1   -1   -1   -1
+   23   -1   -1   36   -1   32   -1   -1   -1   -1   -1   -1   -1   33   35
+   24   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   25   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   26   -1   -1   15   -1   -1   -1   -1   -1   -1   -1   -1   -1   42   14
+   27   -1   -1   15   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   43
+   28   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   29   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   30   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   31   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   32   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   33   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   34   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   35   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   36   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   37   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   38   -1   -1   15   -1   -1   -1   -1   -1   -1   -1   -1   -1   51   14
+   39   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   40   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   41   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   42   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   43   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   44   -1   -1   -1   -1   -1   52   -1   -1   -1   -1   -1   -1   -1   -1
+   45   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   46   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   47   -1   -1   -1   -1   -1   -1   -1   -1   54   -1   -1   -1   -1   -1
+   48   -1   -1   36   -1   -1   -1   -1   -1   -1   -1   -1   -1   56   35
+   49   -1   -1   36   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   57
+   50   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   51   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   52   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   53   -1   63   -1   64   -1   -1   61   -1   -1   62   -1   -1   -1   -1
+   54   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   55   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   56   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   57   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   58   -1   -1   -1   -1   -1   71   -1   -1   -1   -1   -1   -1   -1   -1
+   59   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   60   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   61   -1   -1   -1   -1   -1   -1   -1   73   -1   -1   -1   -1   -1   -1
+   62   -1   63   -1   64   -1   -1   75   -1   -1   62   -1   -1   -1   -1
+   63   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   64   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   65   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   66   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   67   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   68   -1   -1   -1   81   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   69   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   70   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   71   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   72   -1   63   -1   64   -1   -1   84   -1   -1   62   -1   -1   -1   -1
+   73   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   74   -1   -1   86   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   75   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   76   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   77   -1   -1   93   -1   -1   -1   -1   -1   -1   -1   92   -1   -1   -1
+   78   -1   -1   93   -1   -1   -1   -1   -1   -1   -1   99   -1   -1   -1
+   79   -1   -1   -1  100   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   80   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   81   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   82   -1   -1   -1   -1   -1   -1   -1   -1  103   -1   -1   -1   -1   -1
+   83   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   84   -1   -1   -1   -1   -1   -1   -1  105   -1   -1   -1   -1   -1   -1
+   85   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   86   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   87   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   88   -1   -1   15   -1   -1   -1   -1   -1   -1   -1   -1   -1  108   14
+   89   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   90   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   91   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   92   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   93   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   94   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   95   -1   -1   15   -1   -1   -1   -1   -1   -1   -1   -1   -1  112   14
+   96   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   97   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   98   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   99   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  100   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  101   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  102   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  103   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  104   -1   63   -1   64   -1   -1  115   -1   -1   62   -1   -1   -1   -1
+  105   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  106   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  107   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  108   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  109   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  110   -1   -1  120   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  111   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  112   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  113   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  114   -1   -1  130   -1   -1   -1   -1   -1   -1   -1  129   -1   -1   -1
+  115   -1   -1   -1   -1   -1   -1   -1  131   -1   -1   -1   -1   -1   -1
+  116   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  117   -1   -1   -1   -1   -1  132   -1   -1   -1   -1   -1   -1   -1   -1
+  118   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  119   -1  135   -1  136   -1   -1  133   -1   -1  134   -1   -1   -1   -1
+  120   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  121   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  122   -1   -1   15   -1   -1   -1   -1   -1   -1   -1   -1   -1  142   14
+  123   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  124   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  125   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  126   -1   -1   -1   -1   -1  143   -1   -1   -1   -1   -1   -1   -1   -1
+  127   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  128   -1  135   -1  136   -1   -1  144   -1   -1  134   -1   -1   -1   -1
+  129   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  130   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  131   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  132   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  133   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  134   -1  135   -1  136   -1   -1  150   -1   -1  134   -1   -1   -1   -1
+  135   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  136   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  137   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  138   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  139   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  140   -1   -1   -1  156   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  141   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  142   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  143   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  144   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  145   -1   -1   -1  161   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  146   -1   -1  163   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  147   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  148   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  149   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1  165   -1   -1
+  150   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  151   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  152   -1   -1   93   -1   -1   -1   -1   -1   -1   -1  167   -1   -1   -1
+  153   -1   -1   93   -1   -1   -1   -1   -1   -1   -1  168   -1   -1   -1
+  154   -1   -1   -1  169   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  155   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  156   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  157   -1   -1   -1   -1   -1  172   -1   -1   -1   -1   -1   -1   -1   -1
+  158   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  159   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  160   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  161   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  162   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  163   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  164   -1   63   -1   64   -1   -1  176   -1   -1   62   -1   -1   -1   -1
+  165   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  166   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  167   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  168   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  169   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  170   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  171   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  172   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  173   -1   63   -1   64   -1   -1  182   -1   -1   62   -1   -1   -1   -1
+  174   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  175   -1   -1   15   -1  184   -1   -1   -1   -1   -1   -1   -1  185   14
+  176   -1   -1   -1   -1   -1   -1   -1  187   -1   -1   -1   -1   -1   -1
+  177   -1  135   -1  136   -1   -1  188   -1   -1  134   -1   -1   -1   -1
+  178   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  179   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  180   -1   -1  130   -1   -1   -1   -1   -1   -1   -1  191   -1   -1   -1
+  181   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  182   -1   -1   -1   -1   -1   -1   -1  193   -1   -1   -1   -1   -1   -1
+  183   -1  135   -1  136   -1   -1  194   -1   -1  134   -1   -1   -1   -1
+  184   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  185   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  186   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  187   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  188   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  189   -1  135   -1  136   -1   -1  197   -1   -1  134   -1   -1   -1   -1
+  190   -1  135   -1  136   -1   -1  198   -1   -1  134   -1   -1   -1   -1
+  191   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  192   -1   63   -1   64   -1   -1  200   -1   -1   62   -1   -1   -1   -1
+  193   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  194   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  195   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  196   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  197   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  198   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  199   -1   -1   -1  205   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  200   -1   -1   -1   -1   -1   -1   -1  206   -1   -1   -1   -1   -1   -1
+  201   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  202   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  203   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1  207   -1   -1
+  204   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  205   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  206   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  207   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  208   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  209   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  210   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  211   -1  135   -1  136   -1   -1  213   -1   -1  134   -1   -1   -1   -1
+  212   -1  135   -1  136   -1   -1  214   -1   -1  134   -1   -1   -1   -1
+  213   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  214   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  215   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+  216   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
